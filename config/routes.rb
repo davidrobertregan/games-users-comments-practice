@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   
   get '/games', to: 'games#index'
   get 'games/:id', to: 'games#show'
+  delete 'games/:id', to: 'games#destroy'
 
   resources :comments 
 
