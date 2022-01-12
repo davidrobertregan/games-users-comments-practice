@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   get '/games', to: 'games#index'
   get 'games/:id', to: 'games#show'
 
-  get 'comments', to: 'comments#index'
-  get 'comments/:id', to: 'comments#show'
+  resources :comments 
 
 end
